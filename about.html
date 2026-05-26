@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+<nav>
+    <a href="#" class="nav-brand">
+      <div class="nav-logo">MYS</div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-name"> Youth Samaj</span>
+        <span class="nav-brand-sub">Empowering Youth</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blogs.html">blogs</a></li>
+   
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</div>
+
+   <form action="">
+
+     <label for="firstDigit"> First Digit</label>
+    <input type="number" id="firstDigit" name="firstDigit">
+
+    <label for="secondDigit">Second Digit</label>
+    <input type="number" id="secondDigit" name="secondDigit">
+
+    <button type="submit">Add</button>
+
+    <p>Answer: <span id="answer"></span></p>
+    </form>
+    </div>
+
+
+
+<script>
+let a = document.getElementById('firstDigit');
+let b = document.getElementById('secondDigit');
+
+document.querySelector('form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  let sum = parseInt(a.value) + parseInt(b.value);
+  document.getElementById('answer').textContent =
+  sum;
+});
+
+    </script>  
+</body>
+</html>
